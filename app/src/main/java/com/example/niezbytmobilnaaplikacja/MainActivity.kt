@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val a = findViewById<EditText>(R.id.editTextTextPersonName)
+        var a = findViewById<EditText>(R.id.editTextTextPersonName).text
         findViewById<Button>(R.id.button).setOnClickListener {
             findViewById<TextView>(R.id.imie).text = findViewById<TextView>(R.id.imie).text.toString() + a.toString()
         }
